@@ -10,3 +10,19 @@ The team has agreed to the following:
   - Saturday will be our standing team meeting at 12 PM ET for 1 hour. The objective of this meeting is to align on the work done by individual team members and decide on final deliverables. Meeting will be extended as required.
   - Sunday meeting will be called for as required to confirm final deliverables and which documents/code will be pushed to GitHub for final submission.
 Create Branch
+
+### Machine Learning Overview
+As the desired output of our machine learning model is a predication of the percentage increase in property value we will be looking at the following data:
+
+- 10 years of property sales data by borough in NYC for the training set, additional 5 years of property sales will be used to test our model
+- Input features from our database will be the following:
+  - Building Class Category
+  - Neighborhood
+  - Address
+  - Zip Code
+  - Gross Square Feet
+  - Sale Price
+  - Year
+  - Sales Date
+  - Residential
+- The target output will be "Sale Price". As the target output is continuous data we will be using a supervised machine learning model and testing with both linear and multiple linear regression models.
