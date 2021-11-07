@@ -30,5 +30,6 @@ As the desired output of our machine learning model is a predication of the perc
 ![image](https://user-images.githubusercontent.com/84694664/140664113-e60db76c-3df3-4227-afb8-2e85d5b0a612.png)
 
 ### Database
+![image](https://user-images.githubusercontent.com/84694664/140664353-96ad9934-abb5-4d54-a8d2-6700ea56f954.png)
 
 The ERD does not show any primary keys because none of the values are completely unique to each item (addresses can be shared between multiple apartments since they do not include apartment numbers). Foreign key relationships are also excluded since values do not correspond to other tables.
