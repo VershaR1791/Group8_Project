@@ -1,6 +1,7 @@
 # Group8_Project
 
-## Communication Protocols
+## Segment 1 Deliverables: 
+### Communication Protocols
 
 The team has agreed to the following: 
 - Slack shall be used for exchanging updates, checking on team members, and 
