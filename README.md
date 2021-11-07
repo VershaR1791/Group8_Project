@@ -1,6 +1,11 @@
 # Group8_Project
 
 ## Segment 1 Deliverables: 
+
+### Presentation
+
+
+
 ### Communication Protocols
 
 The team has agreed to the following: 
