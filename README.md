@@ -14,7 +14,7 @@ As the desired output of our machine learning model is a predication of the perc
       - Year
       - Sales Date
       - Residential
-The target output will be "Price Increase".  As the target output is continuous data we will be using a supervised machine learning model and testing with both linear and multiple linear regression models.
+The target output will be "Sale Price".  As the target output is continuous data we will be using a supervised machine learning model and testing with both linear and multiple linear regression models.
 
 
 
