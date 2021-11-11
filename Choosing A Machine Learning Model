@@ -1,8 +1,8 @@
-# Choosing A Machine Learning Model
+Choosing A Machine Learning Model
 
-## Supervised Machine Learning
+Supervised Machine Learning
 
-###
+
 For our project, we want to be able to predict unit selling price for residential properties in New York City.  We have 15 years of sales data for the five boroughs in NYC.  
 We will be using the first 10 years of sales data to train our model and the subsequent five years to test our machine learning model.  As supervised learning deals with 
 labeled data this will be the primary model we will use.  
@@ -14,7 +14,7 @@ desired output for our project as it too produces a binary output.
 In order to confirm that the linear regression model is most accurate in predicting the target outcome, we will build a linear regression model, multiple 
 linear regression model and a neural network to compare results.
 
-###
+
 In order to proceed with building our machine learning model we will complete the following steps:
   1. Creating the model:
       To create the model we will be using Scikit-learn linear regression module in Pandas: from sklearn.linear_model import LinearRegression
