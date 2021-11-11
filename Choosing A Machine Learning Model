@@ -1,1 +1,13 @@
+# Choosing A Machine Learning Model
+
+## Supervised Machine Learning
+
+###
+For our project, we want to be able to predict unit selling price for residential properties in New York City.  We have 15 years of sales data for the five boroughs in NYC.  
+We will be using the first 10 years of sales data to train our model and the subsequent five years to test our machine learning model.  As supervised learning deals with 
+labeled data this will be the primary model we will use.  
+
+We will be using a regression model as the target output are continuous variables (sale price).  The classification model would not be an appropriate choice as it can only be used
+to predict discrete outcomes.
+
 
