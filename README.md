@@ -2,7 +2,7 @@
 
 ## Segment 2
 
-### Dahboard
+### Dashboard
 
 Storyboard
 
