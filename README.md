@@ -21,7 +21,7 @@ The final dashboard will be a website created through **Flask** using different 
 - Property Type
 - Budget Range
 - Borough
-through a picklist option.
+through a dropdown menu option built using Flask.
 
 The output will provide:  
 - top 3 choices to the user of properties(address) that they could invest in, 
