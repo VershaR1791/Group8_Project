@@ -4,7 +4,7 @@
 
 ### Dashboard
 
-Storyboard
+Storyboard [embed]http://example.com/file.pdf[/embed]
 
 Tool(s) that will be used to create the final dashboard
 
