@@ -12,7 +12,8 @@ to predict discrete outcomes.  Logistic regression would also not be appropriate
 desired output for our project as it too produces a binary output.  
 
 In order to confirm that the linear regression model is most accurate in predicting the target outcome, we will build a linear regression model, multiple 
-linear regression model and a neural network to compare results.
+linear regression model and a neural network to compare results.  Although we have determined that a Linear Regression model will be most appropriate, our testing will include 
+a variety of models in order to confirm our the soundness of our machine learning model.
 
 Most data preprocessing was completed in SQL using PgAdmin including dropping NaN values, removing commercial properties and outliers.  Property sales with a price of under $1,000 
 also removed as these are typically transfer of property between related parties and do not represent a true property sale.
