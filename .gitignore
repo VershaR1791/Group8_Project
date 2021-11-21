@@ -134,4 +134,4 @@ Thumbs.db
 
 config.py
 config.js
-*.csv
+.Rhistory
