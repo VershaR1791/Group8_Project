@@ -32,13 +32,13 @@ As the desired output of our machine learning model is a predication of the perc
 ![image](https://user-images.githubusercontent.com/84694664/142769927-900f46a4-4693-4a58-a449-3d6afe41a8d4.png)
 
 ## Database Integration
-### Data Cleaning: 
+### Database Cleaning: 
 #### Selected columns
 
-**Original columns: **
+**Original columns:**
   * Borough, Neighborhood, Building Class Category, Tax Class As Of Final Roll 18/1, Block, Lot, Ease-Ment, Building            Class As Of Final Roll 18/1, Address, Apartment Number, Zip Code, Residential Units, Commercial Units, Total Units, Land Square Feet, Gross Square Feet, Year Built, Tax Class At Time of Sale, Building Class At Time Of Sale, Sale Price, Sale Date
 
-**Retained columns: **
+**Retained columns:**
   *  Borough, Neighborhood, Building Class Category, Address, Zip Code, Gross Square Feet, Sale_Price, Sale_Date
  
 **Added columns:**
