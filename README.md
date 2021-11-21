@@ -1,10 +1,10 @@
 # Group8_Project
 
-### Presentation
+## Presentation
 
 Included
 
-### Communication Protocols
+## Communication Protocols
 
 The team has agreed to the following: 
 - Slack shall be used for exchanging updates, checking on team members, and planning team meetings.
@@ -14,7 +14,7 @@ The team has agreed to the following:
   - Sunday meeting will be called for as required to confirm final deliverables and which documents/code will be pushed to GitHub for final submission.
 Create Branch
 
-### Machine Learning Overview
+## Machine Learning Overview
 As the desired output of our machine learning model is a predication of the percentage increase in property value we will be looking at the following data:
 
 - 10 years of property sales data by borough in NYC for the training set, additional 5 years of property sales will be used to test our model
@@ -32,7 +32,7 @@ As the desired output of our machine learning model is a predication of the perc
 
 ![image](https://user-images.githubusercontent.com/84694664/140664113-e60db76c-3df3-4227-afb8-2e85d5b0a612.png)
 
-### Database
+## Database Integration
 ### Data Cleaning 
 
 #### Selected columns
