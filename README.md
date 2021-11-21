@@ -33,9 +33,9 @@ As the desired output of our machine learning model is a predication of the perc
 ![image](https://user-images.githubusercontent.com/84694664/140664113-e60db76c-3df3-4227-afb8-2e85d5b0a612.png)
 
 ### Database
-# Data Cleaning 
+### Data Cleaning 
 
-## Selected columns
+#### Selected columns
 
 Original columns: 
 
@@ -49,21 +49,21 @@ Retained columns:
  
   * $sqf, Year, Month
 
-## Filtering for residential units
+#### Filtering for residential units
 
   * Identified residential Building Class Categories and filtered commercial rows based on category
   * Attempted to use Residential Units column to filter out rows with < 0 residential units; this column did not exclude non-Residential units effectviely and was dropped
  
- ## Filtering incomplete values
+#### Filtering incomplete values
  
   * Dropped rows where square feet or price were 0
 
-## Price Filtering 
+#### Price Filtering 
 
   * Although $0 properties were dropped, it was still necessary to identify price outliers which were very low or high for reasons irrelevant to out analysis (i.e. deed transfers, features not available in our dataset i.e. lakefront, renovations)
   * $sqf column was created to compare prices per property; since prices increased over the years and by Borough, quantiles were calculated by Borough and Year; top and bottom 5% were dropped for each group
 
-### Pre and Post Price Processing Summary 
+#### Pre and Post Price Processing Summary 
 
 Quartiles were not significantly effected by the removal of the top and bottom 5th percentiles; means decreased, standard deviation decreased significantly. 
 
@@ -71,12 +71,12 @@ Quartiles were not significantly effected by the removal of the top and bottom 5
 
 ![Post-Processing summary](https://github.com/VershaR1791/Group8_Project/blob/8fa30e0728e57e3f200255e60bfe09b5543f3bff/post_processing_$.png)
 
-## Primary Key
+#### Primary Key
 
   * Attempted to use address and apartment number as composite primary key (addresses were duplicated often for multi-unit buildings); Populated apartment number columns were insufficient to uniquely identify duplicated addresses
   * numeric index column was created instead
 
-## Final Tables
+#### Final Tables
 
   * Table was placed in two tables with common index: 
      *  Address (columns: Address, Building Class Category, Borough, Neighborhood, Zip Code)
