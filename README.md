@@ -72,6 +72,7 @@ Quartiles were not significantly effected by the removal of the top and bottom 5
 ![Post-Processing summary](https://github.com/VershaR1791/Group8_Project/blob/8fa30e0728e57e3f200255e60bfe09b5543f3bff/post_processing_$.png)
 
 #### Primary Key
+![ERD](https://user-images.githubusercontent.com/84694664/142769288-2ba8d7ae-6b1d-48f4-923e-b94794e682a5.png)
 
   * Attempted to use address and apartment number as composite primary key (addresses were duplicated often for multi-unit buildings); Populated apartment number columns were insufficient to uniquely identify duplicated addresses
   * numeric index column was created instead
