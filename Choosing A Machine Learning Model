@@ -14,10 +14,10 @@ desired output for our project as it too produces a binary output.
 In order to confirm that the linear regression model is most accurate in predicting the target outcome, we will build a linear regression model, multiple 
 linear regression model and a neural network to compare results.
 
-Most data preprocessing was completed in SQL using PgAdmin including droping NaN values, removing commercial properties and outliers.  Property sales with a price of under $1,000 
+Most data preprocessing was completed in SQL using PgAdmin including dropping NaN values, removing commercial properties and outliers.  Property sales with a price of under $1,000 
 also removed as these are typically transfer of property between related parties and do not represent a true property sale.
 
-Label Encoder was used to encode "Address", "Building Class Catagory" and "Neighborhood" in order to use in the machine learning model.
+Label Encoder was used to encode "Address", "Building Class Category" and "Neighborhood" in order to use in the machine learning model.
 
 To confirm which machine learning model provides the greatest degree of predictive accuracy we tested the following models:
 
@@ -39,6 +39,19 @@ In order to proceed with building our machine learning model we will complete th
       We will define the target variable (Sale_Price) and independent variable(s).  We will split the dataset into X and y components, with X being the input data and y the output.
   3. Create the predictions:
       Using y_pred = model.predict(X) we will generate predictions for the y data and plot the best fit line
+      
+Our initial Linear regression model yielded an R2 value of 0.676.  The R2 value increased significantly weh the Polynomial Regression model was used.
+This result was expected as sns.pairplot was used to visualize the relationship between various factors and Sale Price.  The visualizations showed that the relationship was
+not a straight linear relationship.  
 
+  Model	                           MAE	          MSE	          RMSE	      R2 Square	Cross Validation
+0	Linear Regression	           475892.700245	  1.129445e+13	3.360721e+06	0.676345	-0.421112
+1	Robust Regression	           406618.850768	  2.097093e+13	4.579403e+06	0.399054	 0.584584
+2	Ridge Regression	           475814.956204	  1.129592e+13	3.360941e+06	0.676302	-0.421112
+3	Lasso Regression	           482076.172022	  1.131200e+13	3.363332e+06	0.675842	-0.421112
+4	Elastic Net Regression       473787.534290	  1.133768e+13	3.367147e+06	0.675106  -0.419317
+5	Polynomail Regression	       402190.509575	  8.751292e+12	2.958258e+06	0.749222	 0.000000
+6	Stochastic Gradient Descent  476411.676965	  1.128039e+13	3.358628e+06	0.676748	 0.000000
 
+We are continuing to test the last four models and results will be added once available, however we do not expect to see a model with a higher R2 score than the Polynomial Regression model.
 
