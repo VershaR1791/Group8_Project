@@ -136,14 +136,7 @@ Our initial Linear regression model yielded an R2 value of **0.676**.  The R2 va
 This result was expected as sns.pairplot was used to visualize the relationship between various factors and Sale Price.  The visualizations showed that the relationship was
 not a straight linear relationship.  
 
-  Model	                           MAE	          MSE	          RMSE	      R2 Square	Cross Validation
-0	Linear Regression	           475892.700245	  1.129445e+13	3.360721e+06	0.676345	-0.421112
-1	Robust Regression	           406618.850768	  2.097093e+13	4.579403e+06	0.399054	 0.584584
-2	Ridge Regression	           475814.956204	  1.129592e+13	3.360941e+06	0.676302	-0.421112
-3	Lasso Regression	           482076.172022	  1.131200e+13	3.363332e+06	0.675842	-0.421112
-4	Elastic Net Regression       473787.534290	  1.133768e+13	3.367147e+06	0.675106  -0.419317
-5	Polynomail Regression	       402190.509575	  8.751292e+12	2.958258e+06	0.749222	 0.000000
-6	Stochastic Gradient Descent  476411.676965	  1.128039e+13	3.358628e+06	0.676748	 0.000000
+![image](https://user-images.githubusercontent.com/84694664/142787714-dead4c43-f23d-4e7e-a68e-45551e193282.png)
 
 We are continuing to test the last four models and results will be added once available, however we do not expect to see a model with a higher R2 score than the Polynomial Regression model.
 
