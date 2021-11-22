@@ -16,7 +16,7 @@ Create Branch
 
 ## Database Integration
 
-### Database Storage & Integration
+### Database Storage & Integration:
 
 - Database was found on **Kaggle** for [NYC Sales Prices](https://www.kaggle.com/johnshuford/new-york-city-property-sales) for 5 different boroughs for the last 15 years (2003-2018).
 
@@ -86,17 +86,15 @@ Quantiles were not significantly effected by the removal of the top and bottom 5
 
 ## Machine Learning Model
 
-### Overview
-
 ### Choosing A Machine Learning Model
 
 **Supervised Machine Learning**
 
-For our project, we want to be able to predict unit selling price for residential properties in New York City.  We have 15 years of sales data for the five boroughs in NYC.  
-We will be using the first 10 years of sales data to train our model and the subsequent five years to test our machine learning model.  As supervised learning deals with 
+For our project, we want to be able to predict unit selling price for residential properties in New York City. We have 15 years of sales data for the five boroughs in NYC.  
+We will be using the first 10 years of sales data to train our model and the subsequent five years to test our machine learning model. As supervised learning deals with 
 labeled data this will be the primary model we will use.  
 
-We will be using a regression model as the target output are continuous variables (sale price).  The classification model would not be an appropriate choice as it can only be used to predict discrete outcomes.  Logistic regression would also not be appropriate as its outcomes are binary.  Support Vector Machine (SVM) would also not be able to generate the desired output for our project as it too produces a binary output.  
+We will be using a regression model as the target output are continuous variables (sale price). The classification model would not be an appropriate choice as it can only be used to predict discrete outcomes. Logistic regression would also not be appropriate as its outcomes are binary. Support Vector Machine (SVM) would also not be able to generate the desired output for our project as it too produces a binary output.  
 
 ![image](https://user-images.githubusercontent.com/84694664/142769927-900f46a4-4693-4a58-a449-3d6afe41a8d4.png)
 
@@ -104,10 +102,13 @@ In order to confirm that the linear regression model is most accurate in predict
 linear regression model and a neural network to compare results.  Although we have determined that a Linear Regression model will be most appropriate, our testing will include 
 a variety of models in order to confirm our the soundness of our machine learning model.
 
-Most data preprocessing was completed in SQL using PgAdmin including dropping NaN values, removing commercial properties and outliers.  Property sales with a price of under $1,000 also were removed as these are typically transfer of property between related parties and do not represent a true property sale.
+### Cleaning Data for Model
+
+Most data preprocessing was completed in **SQL using PgAdmin** including dropping NaN values, removing commercial properties and outliers.  Property sales with a price of under $1,000 also were removed as these are typically transfer of property between related parties and do not represent a true property sale.
 
 Label Encoder was used to encode **"Address", "Building Class Category"** and **"Neighborhood"** in order to use in the machine learning model.
 
+### Building ML Model
 To confirm which machine learning model provides the greatest degree of predictive accuracy we tested the following models:
 
 - Linear Regression 
@@ -129,7 +130,8 @@ In order to proceed with building our machine learning model we will complete th
       We will define the target variable (Sale_Price) and independent variable(s).  We will split the dataset into X and y components, with X being the input data and y the output.
 #### Create the predictions:
       Using y_pred = model.predict(X) we will generate predictions for the y data and plot the best fit line
-      
+     
+### Accuracy of ML Model
 Our initial Linear regression model yielded an R2 value of **0.676**.  The R2 value increased significantly weh the Polynomial Regression model was used.
 This result was expected as sns.pairplot was used to visualize the relationship between various factors and Sale Price.  The visualizations showed that the relationship was
 not a straight linear relationship.  
