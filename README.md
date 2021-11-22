@@ -1,4 +1,4 @@
-# Group8_Project
+# Group8_Final Project: Investing in Residential Properties in New York City
 
 ## Presentation
 
@@ -14,64 +14,136 @@ The team has agreed to the following:
   - Sunday meeting will be called for as required to confirm final deliverables and which documents/code will be pushed to GitHub for final submission.
 Create Branch
 
-## Machine Learning Overview
-As the desired output of our machine learning model is a predication of the percentage increase in property value we will be looking at the following data:
-
-- 10 years of property sales data by borough in NYC for the training set, additional 5 years of property sales will be used to test our model
-- Input features from our database will be the following:
-  - Building Class Category
-  - Neighborhood
-  - Address
-  - Zip Code
-  - Gross Square Feet
-  - Sale Price
-  - Year
-  - Sales Date
-  - Residential
-- The target output will be "Sale Price". As the target output is continuous data we will be using a supervised machine learning model and testing with both linear and multiple linear regression models.
-![image](https://user-images.githubusercontent.com/84694664/142769927-900f46a4-4693-4a58-a449-3d6afe41a8d4.png)
-
 ## Database Integration
+
+### Database Storage & Integration
+
+- Database was found on **Kaggle** for [NYC Sales Prices](https://www.kaggle.com/johnshuford/new-york-city-property-sales) for 5 different boroughs for the last 15 years (2003-2018).
+
+- Database was uploaded to **AWS** using **RDS & S3**.
+
+- Tables were created for each borough in **PgAdmin**.
+
+  ![image](https://user-images.githubusercontent.com/84694664/142786450-8155dbf6-7bf0-4c7c-a9a0-1411bc729a98.png)
+
+- **AWS** was connected to **PgAdmin**.
+
+- Data was read from **AWS** into **PgAdmin** tables using **SQLAlchemy** in **CoLab**. 
+
+![image](https://user-images.githubusercontent.com/84694664/142786494-070bec8d-d7c5-4bec-82b8-1010a45878bd.png)
+
+- Data was cleaned as discussed below in _Database Cleaning_ section.
+
+- 2 new tables called _"Sales"_ & _"Address"_ were created in **PgAdmin**
+
+- The cleaned data was pushed into the 2 new tables in **PgAdmin**
+![image](https://user-images.githubusercontent.com/84694664/142786759-28f092b7-f095-4236-8063-6f4b7456c556.png)
+
+- The cleaned data in the 2 new tables were joined to create a new table Sales_join_Address
+ ![image](https://user-images.githubusercontent.com/84694664/142786855-89a0ff5b-44ac-403b-81d0-42ec8469df3b.png)
+
 ### Database Cleaning: 
-#### Selected columns
+
+### A. Selected columns
 
 **Original columns:**
-  * Borough, Neighborhood, Building Class Category, Tax Class As Of Final Roll 18/1, Block, Lot, Ease-Ment, Building            Class As Of Final Roll 18/1, Address, Apartment Number, Zip Code, Residential Units, Commercial Units, Total Units, Land Square Feet, Gross Square Feet, Year Built, Tax Class At Time of Sale, Building Class At Time Of Sale, Sale Price, Sale Date
+  * Borough, Neighborhood, Building Class Category, Tax Class As Of Final Roll 18/1, Block, Lot, Ease-Ment, Building Class As Of Final Roll 18/1, Address, Apartment Number, Zip Code, Residential Units, Commercial Units, Total Units, Land Square Feet, Gross Square Feet, Year Built, Tax Class At Time of Sale, Building Class At Time Of Sale, Sale Price, Sale Date
 
 **Retained columns:**
-  *  Borough, Neighborhood, Building Class Category, Address, Zip Code, Gross Square Feet, Sale_Price, Sale_Date
+  * Borough, Neighborhood, Building Class Category, Address, Zip Code, Gross Square Feet, Sale_Price, Sale_Date
  
 **Added columns:**
    * $sqf, Year, Month
 
-#### Filtering for residential units
+### B. Filtering for residential units
   * Identified residential Building Class Categories and filtered commercial rows based on category
   * Attempted to use Residential Units column to filter out rows with < 0 residential units; this column did not exclude non-Residential units effectviely and was dropped
  
-#### Filtering incomplete values
+### C. Filtering incomplete values
    * Dropped rows where square feet or price were 0
 
-#### Price Filtering 
+### D. Price Filtering 
   * Although $0 properties were dropped, it was still necessary to identify price outliers which were very low or high for reasons irrelevant to out analysis (i.e. deed transfers, features not available in our dataset i.e. lakefront, renovations)
   * $sqf column was created to compare prices per property; since prices increased over the years and by Borough, quantiles were calculated by Borough and Year; top and bottom 5% were dropped for each group
 
-#### Pre and Post Price Processing Summary 
+### E. Pre and Post Price Processing Summary 
 Quartiles were not significantly effected by the removal of the top and bottom 5th percentiles; means decreased, standard deviation decreased significantly. 
 
 ![Pre-processing summary](https://github.com/VershaR1791/Group8_Project/blob/8fa30e0728e57e3f200255e60bfe09b5543f3bff/post_processing_$.png)
 
 ![Post-Processing summary](https://github.com/VershaR1791/Group8_Project/blob/8fa30e0728e57e3f200255e60bfe09b5543f3bff/post_processing_$.png)
 
-#### Primary Key
+### F. Primary Key
 ![ERD](https://user-images.githubusercontent.com/84694664/142769288-2ba8d7ae-6b1d-48f4-923e-b94794e682a5.png)
 
   * Attempted to use address and apartment number as composite primary key (addresses were duplicated often for multi-unit buildings); Populated apartment number columns were insufficient to uniquely identify duplicated addresses
   * numeric index column was created instead
 
-#### Final Tables
+### G. Final Tables
   * Table was placed in two tables with common index: 
      *  Address (columns: Address, Building Class Category, Borough, Neighborhood, Zip Code)
      *  Sale (columns: Gross Square Feet, Sale Price, Sale Date, Year, Month)
+
+## Machine Learning Model
+
+### Overview
+
+### Choosing A Machine Learning Model
+
+**Supervised Machine Learning**
+
+For our project, we want to be able to predict unit selling price for residential properties in New York City.  We have 15 years of sales data for the five boroughs in NYC.  
+We will be using the first 10 years of sales data to train our model and the subsequent five years to test our machine learning model.  As supervised learning deals with 
+labeled data this will be the primary model we will use.  
+
+We will be using a regression model as the target output are continuous variables (sale price).  The classification model would not be an appropriate choice as it can only be used to predict discrete outcomes.  Logistic regression would also not be appropriate as its outcomes are binary.  Support Vector Machine (SVM) would also not be able to generate the desired output for our project as it too produces a binary output.  
+
+![image](https://user-images.githubusercontent.com/84694664/142769927-900f46a4-4693-4a58-a449-3d6afe41a8d4.png)
+
+In order to confirm that the linear regression model is most accurate in predicting the target outcome, we will build a linear regression model, multiple 
+linear regression model and a neural network to compare results.  Although we have determined that a Linear Regression model will be most appropriate, our testing will include 
+a variety of models in order to confirm our the soundness of our machine learning model.
+
+Most data preprocessing was completed in SQL using PgAdmin including dropping NaN values, removing commercial properties and outliers.  Property sales with a price of under $1,000 also were removed as these are typically transfer of property between related parties and do not represent a true property sale.
+
+Label Encoder was used to encode **"Address", "Building Class Category"** and **"Neighborhood"** in order to use in the machine learning model.
+
+To confirm which machine learning model provides the greatest degree of predictive accuracy we tested the following models:
+
+- Linear Regression 
+- Robust Regression 
+- Ridge Regression 
+- Lasso Regression 
+- Elastic Net Regression 
+- Polynomail Regression 
+- Stochastic Gradient Descent 
+- Artficial Neural Network 
+- Random Forest Regressor 
+- SVM Regressor
+
+In order to proceed with building our machine learning model we will complete the following steps:
+#### Creating the model:
+      To create the model we will be using **Scikit-learn** linear regression module in **Pandas**: from sklearn.linear_model import LinearRegression
+      
+#### Train the model:
+      We will define the target variable (Sale_Price) and independent variable(s).  We will split the dataset into X and y components, with X being the input data and y the output.
+#### Create the predictions:
+      Using y_pred = model.predict(X) we will generate predictions for the y data and plot the best fit line
+      
+Our initial Linear regression model yielded an R2 value of **0.676**.  The R2 value increased significantly weh the Polynomial Regression model was used.
+This result was expected as sns.pairplot was used to visualize the relationship between various factors and Sale Price.  The visualizations showed that the relationship was
+not a straight linear relationship.  
+
+  Model	                           MAE	          MSE	          RMSE	      R2 Square	Cross Validation
+0	Linear Regression	           475892.700245	  1.129445e+13	3.360721e+06	0.676345	-0.421112
+1	Robust Regression	           406618.850768	  2.097093e+13	4.579403e+06	0.399054	 0.584584
+2	Ridge Regression	           475814.956204	  1.129592e+13	3.360941e+06	0.676302	-0.421112
+3	Lasso Regression	           482076.172022	  1.131200e+13	3.363332e+06	0.675842	-0.421112
+4	Elastic Net Regression       473787.534290	  1.133768e+13	3.367147e+06	0.675106  -0.419317
+5	Polynomail Regression	       402190.509575	  8.751292e+12	2.958258e+06	0.749222	 0.000000
+6	Stochastic Gradient Descent  476411.676965	  1.128039e+13	3.358628e+06	0.676748	 0.000000
+
+We are continuing to test the last four models and results will be added once available, however we do not expect to see a model with a higher R2 score than the Polynomial Regression model.
 
 ## Dashboard
 The final dashboard will be a website created through **Flask** using different **routes**. The website will have 2 sections.
