@@ -2,7 +2,7 @@
 
 ## Presentation
 
-Included
+[Click Here](Project Group 8_Segment 2.pptx)
 
 ## Communication Protocols
 
