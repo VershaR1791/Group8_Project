@@ -2,7 +2,7 @@
 
 ## Presentation
 
-[Click Here](Project Group 8_Segment 2.pptx)
+[Click Here](https://github.com/VershaR1791/Group8_Project/blob/5f155207961f6af6b981ca64e2ff38a7baa353bd/Project%20Group%208_Segment%202.pptx)
 
 ## Communication Protocols
 
