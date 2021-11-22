@@ -63,11 +63,11 @@ Create Branch
    * Dropped rows where square feet or price were 0
 
 ### D. Price Filtering 
-  * Although $0 properties were dropped, it was still necessary to identify price outliers which were very low or high for reasons irrelevant to out analysis (i.e. deed transfers, features not available in our dataset i.e. lakefront, renovations)
+  * Although $0 properties were dropped, it was still necessary to identify price outliers which were very low or high for reasons irrelevant to our analysis (i.e. deed transfers, features not available in our dataset i.e. lakefront, renovations)
   * $sqf column was created to compare prices per property; since prices increased over the years and by Borough, quantiles were calculated by Borough and Year; top and bottom 5% were dropped for each group
 
 ### E. Pre and Post Price Processing Summary 
-Quartiles were not significantly effected by the removal of the top and bottom 5th percentiles; means decreased, standard deviation decreased significantly. 
+Quantiles were not significantly effected by the removal of the top and bottom 5th percentiles; Mean decreased, Standard Deviation decreased significantly. 
 
 ![Pre-processing summary](https://github.com/VershaR1791/Group8_Project/blob/8fa30e0728e57e3f200255e60bfe09b5543f3bff/post_processing_$.png)
 
@@ -77,7 +77,7 @@ Quartiles were not significantly effected by the removal of the top and bottom 5
 ![ERD](https://user-images.githubusercontent.com/84694664/142769288-2ba8d7ae-6b1d-48f4-923e-b94794e682a5.png)
 
   * Attempted to use address and apartment number as composite primary key (addresses were duplicated often for multi-unit buildings); Populated apartment number columns were insufficient to uniquely identify duplicated addresses
-  * numeric index column was created instead
+  * Numeric index column was created instead to be primary key
 
 ### G. Final Tables
   * Table was placed in two tables with common index: 
