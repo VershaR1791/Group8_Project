@@ -124,12 +124,13 @@ To confirm which machine learning model provides the greatest degree of predicti
 
 In order to proceed with building our machine learning model we will complete the following steps:
 #### Creating the model:
-      To create the model we will be using **Scikit-learn** linear regression module in **Pandas**: from sklearn.linear_model import LinearRegression
+To create the model we will be using **Scikit-learn** linear regression module in **Pandas**: from sklearn.linear_model import LinearRegression
       
 #### Train the model:
-      We will define the target variable (Sale_Price) and independent variable(s).  We will split the dataset into X and y components, with X being the input data and y the output.
+We will define the target variable (Sale_Price) and independent variable(s).  We will split the dataset into X and y components, with X being the input data and y the output.
+
 #### Create the predictions:
-      Using y_pred = model.predict(X) we will generate predictions for the y data and plot the best fit line
+Using y_pred = model.predict(X) we will generate predictions for the y data and plot the best fit line
      
 ### Accuracy of ML Model
 Our initial Linear regression model yielded an R2 value of **0.676**.  The R2 value increased significantly weh the Polynomial Regression model was used.
