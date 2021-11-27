@@ -1,4 +1,4 @@
-# Group8_Project
+# Group8_Project_Final Project: Investing in Residential Properties in New York City
 
 ## Dashboard
 The final dashboard will be a website created through **Flask** using different **routes**. The website will have 2 sections.
