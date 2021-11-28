@@ -19,7 +19,8 @@ In order to confirm that the linear regression model is most accurate in predict
   4) Lasso Regression 
   5) Elastic Net Regression 
   6) Polynomail Regression 
-  
+ 
+###
 Our initial Linear regression model yielded an R2 value of 0.676.  The R2 value increased significantly weh the Polynomial Regression model was used.
 This result was expected as sns.pairplot was used to visualize the relationship between various factors and Sale Price.  The visualizations showed that the relationship was
 not a straight linear relationship.  
