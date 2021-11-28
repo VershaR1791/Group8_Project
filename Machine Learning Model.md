@@ -49,11 +49,7 @@ In order to proceed with building our machine learning model we will complete th
 
 ![Pair_Plots](https://user-images.githubusercontent.com/86161212/143789443-a6ed34da-6def-4566-902b-08c89c1ee192.png)
 
-![Machine Learning Outcomes](https://user-images.githubusercontent.com/86161212/143789447-434cdc94-d3e5-4e66-b2df-614664509c10.PNG)
-
 ![Scatter Plot](https://user-images.githubusercontent.com/86161212/143789463-01ded126-804d-4862-81b6-44ec43c20c43.PNG)
 
-
-![image](https://user-images.githubusercontent.com/84694664/142787714-dead4c43-f23d-4e7e-a68e-45551e193282.png)
 
 
