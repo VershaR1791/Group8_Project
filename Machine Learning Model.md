@@ -54,7 +54,14 @@ In order to proceed with building our machine learning model we will complete th
       Using y_pred = model.predict(X) we will generate predictions for the y data and plot the best fit line
 
 
-![image](https://user-images.githubusercontent.com/84694664/142769927-900f46a4-4693-4a58-a449-3d6afe41a8d4.png)
+[Machine Learning Model.pptx](https://github.com/VershaR1791/Group8_Project/files/7614561/Machine.Learning.Model.pptx)
+
+![Pair_Plots](https://user-images.githubusercontent.com/86161212/143789443-a6ed34da-6def-4566-902b-08c89c1ee192.png)
+
+![Machine Learning Outcomes](https://user-images.githubusercontent.com/86161212/143789447-434cdc94-d3e5-4e66-b2df-614664509c10.PNG)
+
+![Scatter Plot](https://user-images.githubusercontent.com/86161212/143789463-01ded126-804d-4862-81b6-44ec43c20c43.PNG)
+
 
 ![image](https://user-images.githubusercontent.com/84694664/142787714-dead4c43-f23d-4e7e-a68e-45551e193282.png)
 
