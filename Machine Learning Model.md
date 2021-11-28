@@ -25,14 +25,15 @@ Our initial Linear regression model yielded an R2 value of 0.676.  The R2 value 
 This result was expected as sns.pairplot was used to visualize the relationship between various factors and Sale Price.  The visualizations showed that the relationship was
 not a straight linear relationship.  
 
-  Model	                           MAE	          MSE	          RMSE	      R2 Square	Cross Validation
-1	Linear Regression	           475892.700245	  1.129445e+13	3.360721e+06	0.676345	-0.421112
-2	Robust Regression	           406618.850768	  2.097093e+13	4.579403e+06	0.399054	 0.584584
-3	Ridge Regression	           475814.956204	  1.129592e+13	3.360941e+06	0.676302	-0.421112
-4	Lasso Regression	           482076.172022	  1.131200e+13	3.363332e+06	0.675842	-0.421112
-5	Elastic Net Regression       473787.534290	  1.133768e+13	3.367147e+06	0.675106  -0.419317
-6	Polynomail Regression	       402190.509575	  8.751292e+12	2.958258e+06	0.749222	 0.000000
-7	SGD Regressor                476411.676965	  1.128039e+13	3.358628e+06	0.676748	 0.000000
+
+ Model	                           MAE	          MSE	          RMSE	      R2 Square	  Cross Validation
+1	Linear Regression	           475892.700245	  1.129445e+13	3.360721e+06	0.676345	  -0.421112
+2	Robust Regression	           406618.850768	  2.097093e+13	4.579403e+06	0.399054	   0.584584
+3	Ridge Regression	           475814.956204	  1.129592e+13	3.360941e+06	0.676302	  -0.421112
+4	Lasso Regression	           482076.172022	  1.131200e+13	3.363332e+06	0.675842	  -0.421112
+5	Elastic Net Regression       473787.534290	  1.133768e+13	3.367147e+06	0.675106    -0.419317
+6	Polynomail Regression	       402190.509575	  8.751292e+12	2.958258e+06	0.749222	   0.000000
+7	SGD Regressor                476411.676965	  1.128039e+13	3.358628e+06	0.676748	   0.000000
 
 
 ### Cleaning Data for Model
