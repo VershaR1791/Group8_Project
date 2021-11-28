@@ -33,12 +33,12 @@ Due to the size of the data, we decided to focus our results on **residential un
 **Label Encoder** and **OneHotEncoder** were were used to encode **"Address"**, **"Building Class Category"** and **"Neighborhood"** in order to use in the machine learning model.
 
 In order to proceed with building our machine learning model we will complete the following steps:
-  1. Creating the model:
+  1. **Creating the model:**
       To create the model we will be using **Scikit-learn** linear regression module in Pandas: from sklearn.linear_model import LinearRegression
-  2. Train the model:
+  2. **Train the model:**
       We will define the target variable (Sale_Price) and independent variable(s). We will split the dataset into X and y components, with X being the input data and y the output.
-  3. Create the predictions:
-      Using y_pred = model.predict(X) we will generate predictions for the y data and plot the best fit line
+  3. **Create the predictions:**
+      Using **y_pred = model.predict(X)** we will generate predictions for the y data and plot the best fit line
 
 
 [Machine Learning Model.pptx](https://github.com/VershaR1791/Group8_Project/files/7614561/Machine.Learning.Model.pptx)
