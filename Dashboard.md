@@ -31,6 +31,10 @@ The output will provide:
 
 ![Slide2](https://user-images.githubusercontent.com/84694664/142731218-c7283fbd-29c0-4872-998d-228e651ae668.PNG)
 
+## Static Visualization
+Some graphs to show trend of Sales Price through years in different boroughs were built using Tableau. 
+[Tableau NYC Visualisation](https://public.tableau.com/app/profile/alexander.r5084/viz/Group8Project/NYCVisualisation)
+
 ## Map visualization
 - The map was built using **JavaScript** and **GeoMaps API**. 
 - The Sale_join_Address database was filtered using **Python (CoLab)** to only incude **0.04%** of database. Including 400K+ data would make the map on JavaScript difficult to visualize and load.
