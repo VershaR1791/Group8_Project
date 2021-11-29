@@ -30,7 +30,8 @@
 
 ### Database Cleaning: 
 
-Code [https://github.com/VershaR1791/Group8_Project/blob/64f485fcd1fe63dad5d187b64555993207b01066/Code_for_Database_Integration/Data_Cleaning_NY_Housing.ipynb]
+[Code] (https://github.com/VershaR1791/Group8_Project/blob/64f485fcd1fe63dad5d187b64555993207b01066/Code_for_Database_Integration/Data_Cleaning_NY_Housing.ipynb)
+
 ### A. Selected columns
 
 **Original columns:**
