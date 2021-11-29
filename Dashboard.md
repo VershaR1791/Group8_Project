@@ -38,7 +38,7 @@ The output will provide:
 ![image](https://user-images.githubusercontent.com/84694664/143798666-35c94236-4d6e-4019-b737-e9fb9218b501.png)
 
 - The dataframe was then converted to **.json** format.
-![image](https://user-images.githubusercontent.com/84694664/143798767-74a812d6-9157-449e-a975-2082f16a614e.png)
+![image](https://user-images.githubusercontent.com/84694664/143799245-a5fed61e-60e7-4124-a193-7db7562de04c.png)
 
 - The visualization has an interactive element where we can switch between _'Street', 'Satellite'_ and _'Dark'_ view
 ![image](https://user-images.githubusercontent.com/84694664/143799120-83949522-2e0a-49d2-a6db-081e575c00d4.png)
