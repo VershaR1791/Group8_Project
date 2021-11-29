@@ -43,6 +43,6 @@ The output will provide:
 - The visualization has an interactive element where we can switch between _'Street', 'Satellite'_ and _'Dark'_ view
 ![image](https://user-images.githubusercontent.com/84694664/143799120-83949522-2e0a-49d2-a6db-081e575c00d4.png)
 
-- The markers provide details of _Address, Neighborhood, Property type, Sales Price_ and _Gross Square feet_.
+- The markers provide details of _Address, Neighborhood, Property type, Zip Code, Sales Price_ and _Gross Square feet_.
 ![image](https://user-images.githubusercontent.com/84694664/143798318-8bf42e9f-c969-4b75-aa3a-181436137baa.png)
 
