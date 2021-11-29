@@ -19,7 +19,7 @@ In order to confirm that the linear regression model is most accurate in predict
   6) Polynomail Regression 
  
 ###
-Our initial Linear regression model yielded an R2 value of **0.676**.  The R2 value increased significantly when the Polynomial Regression model was used.
+Our initial Linear regression model yielded an R2 value of **0.676**.  The R2 value to 0.749 when the Polynomial Regression model was used.
 This result was expected as sns.pairplot was used to visualize the relationship between various factors and Sale Price. The visualizations showed that the relationship was
 not a straight linear relationship.  
 
@@ -30,7 +30,7 @@ Most data preprocessing was completed in **SQL** using **PgAdmin** including dro
 
 Due to the size of the data, we decided to focus our results on **residential units** so we dropping commericial units, sales that had **no square footage** listed and null/NaN values as there was still sufficient data to complete our analysis.
 
-**Label Encoder** and **OneHotEncoder** were were used to encode **"Address"**, **"Building Class Category"** and **"Neighborhood"** in order to use in the machine learning model.
+**Label Encoder** and **OneHotEncoder** were were used to encode **"Address"**, **"Building Class Category"** and **"Neighborhood"** in order to use in the machine learning model.  In segment 3 OneHotEncoder was added to the encoded fields to remove any bias from the encoded data.
 
 In order to proceed with building our machine learning model we will complete the following steps:
   1. **Creating the model:**
