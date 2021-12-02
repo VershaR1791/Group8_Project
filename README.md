@@ -3,7 +3,7 @@
 ## Machine Learning Overview
 ###
 As the desired output of our machine learning model is a predication of the percentage increase in property value we will be looking at the following data:
-  - 15 years of property sales data by borough in NYC for the training set, additional 3 years of property sales will be used to test our model
+  - 12 years of property sales data by borough in NYC for the training set, additional 3 years of property sales will be used to test our model
   - Input features from our database will be the following:
       - Building Class Category
       - Neighborhood
