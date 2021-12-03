@@ -1,7 +1,7 @@
 # Group8_Project
 
 ## Communication Protocol
-[README] (https://github.com/VershaR1791/Group8_Project/blob/95b5e2452ad656093930a4bdfd2b78642f0a4494/Resources/Communication%20Protocols.md)
+(README) [https://github.com/VershaR1791/Group8_Project/blob/95b5e2452ad656093930a4bdfd2b78642f0a4494/Resources/Communication%20Protocols.md]
 
 ## Database Integration
 - [README] (https://github.com/VershaR1791/Group8_Project/blob/5f6a1a49d0097b7c06a94eaf0538558f99f6e9a8/Code_for_Machine_Learning/Machine%20Learning%20Model.md)
