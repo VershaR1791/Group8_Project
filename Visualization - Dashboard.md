@@ -54,7 +54,7 @@ Some graphs to show trend of Sales Price through years in different boroughs wer
 
 ## Final WebPage
 
-Here is the (live)[https://www.loom.com/share/b6c40b0a28434033a3745be86d407e06] video demo of the webpage.
+Here is the [live](https://www.loom.com/share/b6c40b0a28434033a3745be86d407e06) video demo of the webpage.
 Our Final Visualization includes:
 - The dashboard has been made interactive to include historical sales price data by borough for 13 years and shows the trend in sales price built in Tableau.
 - It also provides an interactive map with locations of all addresses and their corresponding data such as neighborhood, square feet and average sales price through the years.
