@@ -59,6 +59,6 @@ Our Final Visualization includes:
 - The dashboard has been made interactive to include historical sales price data by borough for 13 years and shows the trend in sales price built in Tableau.
 - It also provides an interactive map with locations of all addresses and their corresponding data such as neighborhood, square feet and average sales price through the years.
 - It also provides a sample database which the home buyers could download as a csv in the future. The database provides the predicted current price for 2021.
-- 
+
 ![image](https://user-images.githubusercontent.com/84694664/144523772-2b82e6d3-3404-44bb-89a6-67ecac8516b7.png)
 - We will want to enable filter capabilities for the database in the future.
