@@ -32,10 +32,12 @@ The output will provide:
 ![Slide2](https://user-images.githubusercontent.com/84694664/142731218-c7283fbd-29c0-4872-998d-228e651ae668.PNG)
 
 ## Static Visualization
+
 Some graphs to show trend of Sales Price through years in different boroughs were built using Tableau. 
-[Tableau NYC Visualisation](https://public.tableau.com/app/profile/alexander.r5084/viz/Group8Project/NYCVisualisation)
+[Tableau NYC Visualisation](https://public.tableau.com/views/Group8Project_updated/NewYorkCitySalesPrice?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
 ## Map visualization
+
 - The map was built using **JavaScript** and **GeoMaps API**. 
 - The Sale_join_Address database was filtered using **Python (CoLab)** to only incude **0.04%** of database. Including 400K+ data would make the map on JavaScript difficult to visualize and load.
 - API call was made to pull in **Latitude** and **Longitude** for each line of address.
@@ -50,3 +52,13 @@ Some graphs to show trend of Sales Price through years in different boroughs wer
 - The markers provide details of _Address, Neighborhood, Property type, Zip Code, Sales Price_ and _Gross Square feet_.
 ![image](https://user-images.githubusercontent.com/84694664/143798318-8bf42e9f-c969-4b75-aa3a-181436137baa.png)
 
+## Final WebPage
+
+Here is the (live)[https://www.loom.com/share/b6c40b0a28434033a3745be86d407e06] video demo of the webpage.
+Our Final Visualization includes:
+- The dashboard has been made interactive to include historical sales price data by borough for 13 years and shows the trend in sales price built in Tableau.
+- It also provides an interactive map with locations of all addresses and their corresponding data such as neighborhood, square feet and average sales price through the years.
+- It also provides a sample database which the home buyers could download as a csv in the future. The database provides the predicted current price for 2021.
+- 
+![image](https://user-images.githubusercontent.com/84694664/144523772-2b82e6d3-3404-44bb-89a6-67ecac8516b7.png)
+- We will want to enable filter capabilities for the database in the future.
