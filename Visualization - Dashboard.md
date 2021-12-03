@@ -1,4 +1,4 @@
-# Group8_Project_Final Project: Investing in Residential Properties in New York City
+# Group8_Project_Final Project:
 
 ## Dashboard
 The final dashboard will be a website created through **JavaScript**. The website will have 2 sections.
